@@ -41,6 +41,13 @@ public class Hello{
 
         // System.out.println(multiply);
 
+        //double height = 5.6;  //by defualt decimal points are treated as double data type.
+
+        //to define float we add suffix f to the value 5.6f
+
+        //char a = 'A'; //char data type is used for storing single char with single quotes
+
+        //string will be enclosed in double quotes
 
         // int num1 = 10;
         // int num2 = 2;
@@ -75,15 +82,42 @@ public class Hello{
 
        //we use the same name of the class
 
-       Rectangle rec = new Rectangle(10, 20);
-       System.out.println(rec.height);
-       System.out.println(rec.width);
+    //    Rectangle rec = new Rectangle(10, 20);
+    //    System.out.println(rec.height);
+    //    System.out.println(rec.width);
 
-       String a  = rec.getName();   //calling the method
-       System.out.println(a);
+    //    String a  = rec.getName();   //calling the method
+    //    System.out.println(a);
 
-       int area = rec.findArea();
-       System.out.println(area);
+    //    int area = rec.findArea();
+    //    System.out.println(area);
 
-    }
+
+    //for arrays all the elements in the array should be of same data type
+
+    // int nums[] = {1,2,3,4,5}; 
+
+    //arrays are fixed in size.
+
+    // for(int i =0; i<nums.length; i++){
+    //     System.out.println(nums[i]);
+    // }
+
+    // for(int i : nums){
+    //     System.out.println(i);
+    // }
+
+    //arrays can be initialized in other way as well
+
+    int[] nums = new int[4];
+
+    nums[0] = 1;
+    nums[1] = 2;
+    nums[2] = 3;
+    nums[3] = 4;
+
+    for(int i : nums){
+        System.out.println(i);
+    }    
+}
 }
