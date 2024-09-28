@@ -56,29 +56,30 @@ public class Basics {
         
         // System.out.println(y);   //implicit
 
+        //char -> byte -> short -> int -> long -> float -> double -> boolean -> String
 
         //methods for conversion 
 
         //int => string
 
-        int a = 123;
+        // int a = 123;
 
-        String b = String.valueOf(a);  //any data type can be converted into string using this method.
+        // String b = String.valueOf(a);  //any data type can be converted into string using this method.
 
-        String z = Integer.toString(a);
+        // String z = Integer.toString(a);
 
-        System.out.println(b);
+        // System.out.println(b);
 
-        System.out.println(b.getClass().getSimpleName());  //checking the type of variable 
+        // System.out.println(b.getClass().getSimpleName());  //checking the type of variable 
 
-        //this is callable by objects only. So non-primitive types only works
+        // //this is callable by objects only. So non-primitive types only works
 
-        //for primitive - we can convert it into an object and check.
+        // //for primitive - we can convert it into an object and check.
 
-        System.out.println(((Object)a).getClass().getSimpleName());   // using Object keyword, we can convert primtive into an object.
+        // System.out.println(((Object)a).getClass().getSimpleName());   // using Object keyword, we can convert primtive into an object.
 
-        //once we are done with scanning we close the scanner
+        // //once we are done with scanning we close the scanner
 
-        sc.close();
+        // sc.close();
     }
 }
