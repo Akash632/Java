@@ -27,5 +27,11 @@ public class Operators {
 
 
         //---------conditional statements
+
+        if(5>2){
+            System.out.println("Yes");
+        }else{
+            System.out.println("No");
+        }
     }
 }
