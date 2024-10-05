@@ -2,6 +2,12 @@
 
 
 
+
+
+
+
+
+
 public class ArraysIntro {
     public static void main(String[] args) {
 
@@ -43,5 +49,76 @@ public class ArraysIntro {
         //     System.out.println(i);
         // }
 
+        //Array concatination
+
+        //In java, system class provides array concatination method to concat arrays.
+
+        //System.arraycopy(array1, array1StartPosition, array2, array2StartPosition, noof elements);
+        // int[] arr1 = {1,2,3};
+        // int[] arr2 = {4,5,6};
+
+        // int[] result = new int[arr1.length + arr2.length];
+
+        // System.arraycopy(arr1,0,result,0,3);
+
+        // System.out.println(Arrays.toString(result));
+
+        // System.arraycopy(arr2, 0, result, 3,3);
+
+        // System.out.println(Arrays.toString(result));
+
+        //Array slicing = Arrays.copyOfRange(array, startIndex, endIndex);
+
+        // int[] arr1 = {1,2,3,4,5};
+
+        // int[] copyArr = Arrays.copyOfRange(arr1, 0, 3);
+
+        // System.out.println(Arrays.toString(copyArr));
+
+
+        //multidimensional arrays.
+
+        // We can create N Dimensional arrays like 2D, 3D etc.
+
+        //A two dimensional array is a collection of 1d arrays.
+
+        // {
+        //     {12, 24, 36},    rows- noof 1d arrays - 3
+        //     {15, 30, 45},    columns- noof elements in each 1d array - 3
+        //     {16, 32, 48}      So, total noof elements = 3*3 = 9;
+        // }
+
+        // here first will have index 0 and each element will have normal index from 0 to 1.
+
+        // int[][] arr1 = {{1,2,3},{4,5,6}};
+
+        //int[][] arr = new int[3][3];
+
+        //for printing 2d array we use deep string method 
+
+        // System.out.println(Arrays.deepToString(arr1));
+
+        // for(int i =0; i<arr1.length; i++){
+        //     for(int j =0; j<arr1[i].length; j++){
+        //         System.out.println(arr1[i][j]);
+        //     }
+        // }
+
+        //transposing the matrix;
+        // int[][] arr1 = {{1,2,3},{4,5,6},{7,8,9}};
+
+        // for(int i=0; i<arr1.length; i++){
+        //     for(int j=i+1; j<arr1[i].length; j++){
+        //         int temp = arr1[i][j];
+        //         arr1[i][j] = arr1[j][i];
+        //         arr1[j][i] = temp;
+        //     }
+        // }
+
+        // System.out.println(Arrays.deepToString(arr1));
+
+        //This transpose logic works only for sqaure matrix and in-place transponse. 
+
+        //We can make a in-place transpose, if it is not a square matrix.
     }   
 }
