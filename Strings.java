@@ -1,3 +1,4 @@
+
 public class Strings {
     public static void main(String[] args){
 
@@ -53,8 +54,41 @@ public class Strings {
 
         //Printf - rather than formating separetely we can directly, format it during the print statement.
 
-        String sent = "My full name is %s%s";
+        // String sent = "My full name is %s%s";
 
-        System.out.printf(sent,s1,s2);
+        // System.out.printf(sent,s1,s2);
+
+        // Strings and Arrays
+
+        // String name = "Akash Nagineni";
+
+        // String[] values = name.split(" ");  //works in the same way as JS
+
+        // System.out.println(Arrays.toString(values));
+
+       // The join() method joins the given elements with the specified delimiter and returns a new string.
+
+       //String.join(delimiter, str1, str2, str3, ...);
+
+        // String delimeter = "-";
+
+        // String pre = "is";
+
+        // String gender = "male";
+
+
+       // System.out.println(String.join(delimeter, name, pre, gender)); //Akash Nagineni-is-male
+
+       //String[] names = {"Akash","Ashok","Anant"};
+
+       //System.out.println(String.join("-", names));  //returns a new string with "-"
+
+       // We can use the same method to join arrays.
+
+       //same works for arrayList as well.
+
+
+
+
     } 
 }

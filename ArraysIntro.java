@@ -1,12 +1,7 @@
 
-
-
-
-
-
-
-
-
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class ArraysIntro {
     public static void main(String[] args) {
@@ -120,5 +115,51 @@ public class ArraysIntro {
         //This transpose logic works only for sqaure matrix and in-place transponse. 
 
         //We can make a in-place transpose, if it is not a square matrix.
+
+        //sorting arrays
+
+        // Integer[] arr = {5,2,10,9,12,1};
+
+        // Arrays.sort(arr);  //ascending order.
+
+        // System.out.println(Arrays.toString(arr));
+
+        // Arrays.sort(arr, Collections.reverseOrder());  //descending order.
+
+        // System.out.println(Arrays.toString(arr));
+
+        //for using collections, we need to use Integer.
+
+        //Reversing strings
+
+        //To reverse strings, we convert string into char array and then we loop and join in reverse order.
+
+        //to get characterArray from string we use toCharArray().
+
+        // String name = "Akash";
+
+        // char[] nameArray = name.toCharArray();
+
+        // String reverse = "";
+
+        // for(int i = name.length()-1; i>=0; i--){
+        //     reverse += nameArray[i];
+        // }
+
+        // System.out.println(reverse);  //reversing a word
+
+        //Reversing arrays -  we can either loop or use Collection.reverse();
+
+        Integer[] arr = {1,2,3,4,5,6,7,8,9,10,10};
+
+        ArrayList<Integer> newArr = new ArrayList<>(Arrays.asList(arr));
+
+        Collections.reverse(newArr);
+
+        System.out.println(newArr);  //reversing
+
+        
+
+
     }   
 }
