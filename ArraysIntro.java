@@ -1,7 +1,4 @@
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
 public class ArraysIntro {
     public static void main(String[] args) {
@@ -150,13 +147,13 @@ public class ArraysIntro {
 
         //Reversing arrays -  we can either loop or use Collection.reverse();
 
-        Integer[] arr = {1,2,3,4,5,6,7,8,9,10,10};
+        // Integer[] arr = {1,2,3,4,5,6,7,8,9,10,10};
 
-        ArrayList<Integer> newArr = new ArrayList<>(Arrays.asList(arr));
+        // ArrayList<Integer> newArr = new ArrayList<>(Arrays.asList(arr));
 
-        Collections.reverse(newArr);
+        // Collections.reverse(newArr);
 
-        System.out.println(newArr);  //reversing
+        // System.out.println(newArr);  //reversing
 
         
 
