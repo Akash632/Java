@@ -73,5 +73,12 @@ public class Hashmaps {
         for(String key : data.keySet()){
             System.out.println(key + ":" + data.get(key));
         }
+
+        //We can also iterate using entrySet, because when we use entrySet we get a collection of elements. We can map
+        //the elements and each element can be accessed using Map.Entry.
+
+        for(Map.Entry<String, Integer> entry: data.entrySet()){
+            System.out.println(entry);
+        }
     }  
 }
