@@ -1,5 +1,15 @@
 import java.util.*;
 
+class User{
+    String name;
+    int age;
+
+    User(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+}
+
 public class Problems {
 
     // static int findIndex(int num, int[] arr){
@@ -11,6 +21,23 @@ public class Problems {
     //     return 0;
     // }
     public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        User[] u = new User[3];
+
+        for(int i=0; i<3; i++){
+            System.out.println("Enter name : ");
+            String name = sc.nextLine();
+
+            System.out.println("Enter age : ");
+            int age = sc.nextInt();
+            sc.nextLine();
+
+            u[i] = new User(name, age);
+        }
+
+        System.out.println(Arrays.toString(u));
+
         /*
         * Write a Java program that takes two user input integers m and n and prints the multiplication table from 1 to n for the 
         * number m. The program should use nested for loops to generate the table.
@@ -31,8 +58,6 @@ public class Problems {
         --------------------
         The input integers are m=3 and n=5. The program generates the multiplication table for 3 from 1 to 5. 
         */
-
-        Scanner sc = new Scanner(System.in);
 
 
         // int m = sc.nextInt();
