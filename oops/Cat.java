@@ -1,9 +1,13 @@
 
 
 public class Cat {
-    String name;
+    public String name;
 
-    public Cat(String name){
+    private Cat(String name){
         this.name = name;
+    }
+
+    public static void printName(){
+        System.out.println("Hello akash");
     }
 }
