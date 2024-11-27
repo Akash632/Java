@@ -6,8 +6,6 @@ public class MethodsPractice{
         // System.out.println(result);
 
         //Cat c = new Cat();
-
-        Cat.printName();
         // c.name = "meow";
         // ChangeName(c);
         // System.out.println(c.name); 
@@ -15,6 +13,11 @@ public class MethodsPractice{
         // printNums(1,2,4,5,6);
 
         // System.out.println(args[0]);
+
+
+        Cat.getInstance();
+        Cat.getInstance();
+        Cat.getInstance(); //only one object is created at once.
     }
 
     // public static void ChangeName(Cat c){

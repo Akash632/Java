@@ -1,13 +1,16 @@
 
 
 public class Cat {
-    public String name;
+    public static Cat cat;
 
-    private Cat(String name){
-        this.name = name;
+    private Cat(){
     }
 
-    public static void printName(){
-        System.out.println("Hello akash");
+    public static Cat getInstance(){
+
+        if(cat == null){
+            cat = new Cat();
+        }
+        return cat;
     }
 }
