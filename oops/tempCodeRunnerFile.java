@@ -1,0 +1,1 @@
+printNums(nums);
